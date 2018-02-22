@@ -261,9 +261,16 @@ p {
     font-weight: bold;
     font-size: 25px;
     padding-top: 1em;
+    padding-bottom: 2em;
   }
 
   .box8 h1 {
     margin: 0;
     padding: 0;
+    padding-bottom: 1%;
+  }
+
+  .box8icons a {
+    padding-top: 1em;
+    padding: 1em;
   }

@@ -163,59 +163,59 @@ p {
     color: #FFFFFF;
   }
 
-.button2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  background-color: #FEA780;
-  border: none;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 300px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+  .button2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #FEA780;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
 
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+  .button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 
-.button2 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+  .button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
 
-.button2 {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+  .button2 {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
 
-.button2:hover {
-  background-color: #FEA780
-}
+  .button2:hover {
+    background-color: #FEA780
+  }
 
-.button2:active {
-  background-color: #FEA780;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+  .button2:active {
+    background-color: #FEA780;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
-.button2:hover span {
-  padding-right: 25px;
-}
+  .button2:hover span {
+    padding-right: 25px;
+  }
 
-.button2:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+  .button2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
   .box6 {
     grid-row: 4/6;
@@ -236,10 +236,12 @@ p {
     align-items: center;
   }
 
-  .box7 p {
+  .box7 pre {
     font-size: 25px;
   	font-weight: bold;
     color: #EBEBEB;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1em;
   }
 
   .box8 {

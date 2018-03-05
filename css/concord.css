@@ -170,6 +170,8 @@ img {
 .challengeAndOverviewPicture {
   grid-row: 4/6;
   grid-column: 2;
+  height: auto;
+  width: auto;
 }
 
 .caseStudyAnswer {

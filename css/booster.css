@@ -62,53 +62,41 @@ img {
 }
 
 .prototypeButton {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  background-color: #FEA780;
-  border: none;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 300px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    position: relative;
+    background-color: #FEA780;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.prototypeButton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.prototypeButton:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
 }
 
-.prototypeButton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.prototypeButton:hover {
-  background-color: #FEA780;
-}
-
-.prototypeButton:active {
-  background-color: #FEA780;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.prototypeButton:hover span {
-  padding-right: 25px;
-}
-
-.prototypeButton:hover span:after {
-  opacity: 1;
-  right: 0;
+.prototypeButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 .caseStudyAboutProjectBanner {
@@ -117,64 +105,31 @@ img {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #FDDC3D;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 3em;
-}
-
-.caseStudyAboutProjectBanner p {
-  color: #222222;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
+  padding: 5em;
 }
 
 .caseStudyAboutProjectBanner img {
   height: 64px;
   width: 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1em;
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 
 .toolsUsed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 3em;
-  padding-right: 3em;
+  color: #222222;
+  text-align: center;
 }
 
 .aboutProject {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  color: #222222;
+  text-align: center;
 }
 
 .whatIDid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 3em;
-  padding-right: 3em;
+  color: #222222;
+  text-align: center;
 }
 
 .caseStudyOverview {
@@ -259,126 +214,96 @@ img {
   grid-row: 7;
   grid-column: 1/3;
   background-color: #01ACAC;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 3em;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
 }
 
-.caseStudyUserResearch img {
+.researchTitle {
+  grid-row: 1;
+  grid-column: 2;
   color: #EBEBEB;
-  width: 120px;
-  height: 120px;
-}
-
-.caseStudyUserResearch h1 {
+  margin-left: 13em;
+  padding: 2em;
   font-weight: 900;
-  color: #EBEBEB;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
 }
 
-.caseStudyUserResearch h2 {
+.feedbackBox {
+  grid-row: 2;
   color: #EBEBEB;
-  font-weight: 700;
-}
-
-.caseStudyUserResearch p:nth-of-type(1) {
-  font-weight: normal;
-  color: #EBEBEB;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
   text-align: center;
+  margin-left: 7em;
 }
 
-.caseStudyUserResearch p:nth-of-type(2) {
-  font-weight: normal;
+.surveyBox {
+  grid-row: 2;
+  grid-column: 3;
   color: #EBEBEB;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
   text-align: center;
+  margin-right: 7em;
 }
 
-.caseStudyUserResearch p:nth-of-type(3) {
+.userIcon {
+  grid-row: 2;
+  grid-column: 2;
+  color: #EBEBEB;
+  margin-left: 19em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.researchParagraphs {
+  grid-row: 3;
+  grid-column: 2;
+  color: #EBEBEB;
+  text-align: center;
   font-weight: 600;
-  color: #EBEBEB;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.caseStudyUserResearch p:nth-of-type(4) {
-  font-weight: 600;
-  color: #EBEBEB;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+  margin-left: 2em;
+  font-size: 20px;
 }
 
 .userResearchButton {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  background-color: #FEA780;
-  border: none;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px;
-  width: 350px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    background-color: #FEA780;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 1em;
 }
 
-.userResearchButton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.userResearchButton:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
 }
 
-.userResearchButton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.userResearchButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 .userResearchButton {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.userResearchButton:hover {
-  background-color: #FEA780
-}
-
-.userResearchButton:active {
-  background-color: #FEA780;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.userResearchButton:hover span {
-  padding-right: 25px;
-}
-
-.userResearchButton:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 .caseStudyAnalysis {
@@ -386,31 +311,38 @@ img {
   grid-column: 1/3;
   background-color: #FDDC3D;
   padding: 3em;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
 }
 
-.caseStudyAnalysis h1 {
+.textSide {
+  margin-left: 2em;
+  padding-top: 2em;
+  margin: 3em;
+}
+
+.analysisHeading h1 {
   font-weight: 900;
   color: #222222;
+  padding-bottom: 1em;
 }
 
-.caseStudyAnalysis img {
-  width: 72px;
-  height: 72px;
+.analysisHeading p {
+  font-weight: 600;
+  color: #222222;
 }
 
 .competitorsPicture img {
-  width: 247px;
-  height: 498px;
+  width: auto;
+  height: auto;
+  padding: 5em;
 }
 
-.caseStudyAnalysis pre {
-  font-family: 'Raleway', sans-serif;
+.analysisParagraph {
   font-size: 20px;
   color: #222222;
   font-weight: 600;
-  padding-top: 10em;
 }
 
 .caseStudyPersonaBox {
@@ -448,20 +380,35 @@ img {
 .caseStudyUserStories {
   grid-row: 11;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 5em;
   background-color: #01ACAC;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
 }
 
-.caseStudyUserStories img {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
-}
-
-.caseStudyUserStories h1 {
+.leftTextStories h1 {
+  grid-column: 1;
+  grid-row: 1;
   color: #EBEBEB;
   font-weight: 900;
+}
+
+.leftTextStories {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.leftTextStories p {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.storiesIcon {
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 7.5em;
+  margin-right: 5em;
 }
 
 .caseStudyUserStories h2 {
@@ -490,22 +437,32 @@ img {
   grid-column: 1/3;
   padding: 3em;
   background-color: #FDDC3D;
+  display: flex;
+  flex-direction: column;
 }
 
 .caseStudyWireframes h1 {
   color: #222222;
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.caseStudyWireframes p {
+.caseStudyWireframes pre {
+  font-family: 'Raleway', sans-serif;
   color: #222222;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .caseStudyMockups {
   grid-row: 14;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 5em;
   background-color: #000000;
   display: flex;
   flex-direction: column;
@@ -543,7 +500,7 @@ img {
 .caseStudyRoadblock {
   grid-row: 16;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 5em;
   background-color: #01ACAC;
   display: flex;
   flex-direction: column;
@@ -577,45 +534,55 @@ img {
 .caseStudyBranding {
   grid-row: 18;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 5em;
   background-color: #FDDC3D;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
 }
 
-.caseStudyBranding h1 {
+.brandingTextSide {
+  font-weight: 700;
+  color: #222222;
+  padding-right: 5em;
+  padding-top: 4em;
+}
+
+.brandingTextSide h1 {
   font-weight: 900;
   color: #222222;
+  padding-bottom: 1em;
 }
 
-.caseStudyBranding p:nth-of-type(1) {
-  font-weight: 700;
-  color: #222222;
-}
-
-.caseStudyBranding p:nth-of-type(2) {
-  font-weight: 700;
-  color: #222222;
-}
-
-.caseStudyBranding p:nth-of-type(3) {
-  font-weight: 700;
-  color: #222222;
+.boosterBranding {
+  margin-right: 5em;
+  margin: 3em;
 }
 
 .caseStudyFinishedProject {
   grid-row: 19/20;
   grid-column: 2;
-  padding: 3em;
+  padding: 5em;
   background-color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
 .caseStudyFinishedProject h1 {
   font-weight: 900;
   color: #EBEBEB;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
 .caseStudyFinishedProject p {
   font-weight: 700;
   color: #EBEBEB;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  font-size: 19px;
 }
 
 .caseStudyFinishedHome {
@@ -633,13 +600,23 @@ img {
 .caseStudyUserTesting {
   grid-row: 21;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 5em;
   background-color: #01ACAC;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
 }
 
-.caseStudyUserTesting h1 {
-  font-weight: 900;
-  color: #EBEBEB;
+.testingText h1 {
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 2em;
+  margin-left: 0.5em;
+}
+
+.testingImage img {
+  margin-left: 12em;
 }
 
 .caseStudyConclusion {
@@ -647,6 +624,22 @@ img {
   grid-column: 1/3;
   padding: 3em;
   background-color: #FDDC3D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 .caseStudyConclusion h1 {
@@ -654,7 +647,8 @@ img {
   color: #222222;
 }
 
-.caseStudyConclusion p {
+.caseStudyConclusion pre {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #222222;
 }

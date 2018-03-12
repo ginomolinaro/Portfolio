@@ -11,23 +11,21 @@ main {
   flex: 1;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
 .wrapper {
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 23em) {
 .caseStudyHeader {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #FDDC3D;
   padding: 1em;
 }
-}
 
-@media screen and (min-width: 40em) {
 .caseStudyTopPhoto {
   grid-row: 2;
   grid-column: 1;
@@ -35,18 +33,17 @@ main {
   align-items: center;
   justify-content: center;
 }
-}
 
-@media screen and (min-width: 40em) {
 .caseStudyName {
   grid-row: 2;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: #000000;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 3em;
 }
 
 .caseStudyName img {
@@ -57,7 +54,7 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .caseStudyName p {
@@ -71,25 +68,24 @@ main {
   justify-content: center;
   padding-bottom: 1em;
 }
-}
 
-@media screen and (min-width: 40em) {
 .prototypeButton {
     font-family: 'Raleway', sans-serif;
+    text-decoration: none;
     font-weight: bold;
     position: relative;
     background-color: #FEA780;
     border: none;
-    font-size: 28px;
+    font-size: 20px;
     color: #FFFFFF;
     padding: 20px;
-    width: 300px;
+    width: 250px;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    margin: 1em;
 }
 
 .prototypeButton:after {
@@ -111,25 +107,23 @@ main {
     opacity: 1;
     transition: 0s
 }
+
+.prototypeButton {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyAboutProjectBanner {
   grid-row: 3;
   grid-column: 2;
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #FDDC3D;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(1, auto);
-  padding: 5em;
+  display: flex;
 }
 
 .caseStudyAboutProjectBanner img {
   height: 64px;
   width: 64px;
-  padding-bottom: 0.5em;
 }
 
 .caseStudyAboutProjectBanner h1 {
@@ -138,29 +132,44 @@ main {
 }
 
 .toolsUsed {
+  width: 100%;
   color: #222222;
   text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
 }
 
 .aboutProject {
+  width: 100%;
   color: #222222;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
 }
 
 .whatIDid {
+  width: 100%;
   color: #222222;
   text-align: center;
-}
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyOverview {
   grid-row: 4/5;
   grid-column: 1;
   background-color: #E94545;
-  padding: 4.5em;
+  padding: 4em;
 }
-
 
 .caseStudyOverview h1 {
   color: #EBEBEB;
@@ -172,16 +181,13 @@ main {
   color: #EBEBEB;
   font-weight: 700;
 }
-}
 
-@media screen and (min-width: 40em) {
 .caseStudyChallenge {
   grid-row: 5/6;
   grid-column: 1;
-  background-color: #000000;
-  padding: 4.5em;
+  background-color: #222222;
+  padding: 4em;
 }
-
 
 .caseStudyChallenge h1 {
   color: #EBEBEB;
@@ -193,16 +199,13 @@ main {
   color: #EBEBEB;
   font-weight: 700;
 }
-}
 
-@media screen and (min-width: 40em) {
 .challengeAndOverviewPicture {
   grid-row: 4/6;
   grid-column: 2;
-}
+  display: flex;
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyAnswer {
   grid-row: 6;
   grid-column: 1/3;
@@ -212,26 +215,36 @@ main {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  padding-top: 3em;
-  padding-bottom: 4em;
 }
 
-
-.caseStudyAnswer img {
-  padding-right: 2em;
-  padding-top: 5em;
-  color: #000000;
-  width: 100px;
-  height: 100px;
+.answerIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.caseStudyAnswer h1 {
+.answerTextBox {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.answerTextBox h1 {
   color: #222222;
   font-weight: 900;
-  padding-left: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
-.caseStudyAnswer pre {
+.answerTextBox p {
   color: #222222;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
@@ -240,74 +253,83 @@ main {
   align-items: left;
   justify-content: left;
 }
-}
 
-@media screen and (min-width: 40em) {
 .caseStudyUserResearch {
   grid-row: 7;
   grid-column: 1/3;
   background-color: #E94545;
   padding: 3em;
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 3;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 40em) {
-.researchTitle {
-  grid-row: 1;
-  grid-column: 2;
+.researchTitle h1 {
   color: #EBEBEB;
-  margin-left: 13em;
-  padding: 2em;
   font-weight: 900;
-}
+  text-align: center;
+  padding-left: 0.5em;
 }
 
-@media screen and (min-width: 40em) {
+.researchTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .feedbackBox {
-  grid-row: 2;
   color: #EBEBEB;
   text-align: center;
-  margin-left: 7em;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4em;
 }
 
-@media screen and (min-width: 40em) {
+.feedbackAndSurveyBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .surveyBox {
-  grid-row: 2;
-  grid-column: 3;
   color: #EBEBEB;
   text-align: center;
-  margin-right: 7em;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4em;
 }
 
-@media screen and (min-width: 40em) {
-.userIcon {
-  grid-row: 2;
-  grid-column: 2;
+.feedbackAndSurveyBox img {
   color: #EBEBEB;
-  margin-left: 19em;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
+  padding: 4em;
 }
 
-@media screen and (min-width: 40em) {
 .researchParagraphs {
-  grid-row: 3;
-  grid-column: 2;
   color: #EBEBEB;
   text-align: center;
   font-weight: 600;
-  margin-left: 2em;
   font-size: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-@media screen and (min-width: 40em) {
+.researchButtons {
+  padding: 2em;
+}
+
 .userResearchButton {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -350,42 +372,46 @@ main {
 .userResearchButton {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-}
 
-@media screen and (min-width: 40em) {
 .caseStudyAnalysis {
   grid-row: 8;
   grid-column: 1/3;
   background-color: #FDDC3D;
-  padding: 3em;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(1, auto);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
 }
 
-@media screen and (min-width: 40em) {
 .textSide {
-  margin-left: 2em;
-  padding-top: 2em;
-  margin: 3em;
-}
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
 .analysisHeading h1 {
   font-weight: 900;
   color: #222222;
-  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
-.analysisHeading p {
-  font-weight: 600;
-  color: #222222;
+.competitorsPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .competitorsPicture img {
-  width: auto;
-  height: auto;
-  padding: 5em;
+  height: 75%;
+  width: 75%;
+  object-fit: cover;
 }
 
 .analysisParagraph {
@@ -393,64 +419,114 @@ main {
   color: #222222;
   font-weight: 600;
 }
+
+.analysisParagraph {
+  font-size: 20px;
+  color: #222222;
+  font-weight: 600;
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyPersonaBox {
   grid-row: 9;
   grid-column: 1/3;
-  padding: 4em;
-  background-color: #000000;
-  text-align: center;
+  padding: 5em;
+  background-color: #222222;
 }
 
-.caseStudyPersonaBox h1 {
+.personaHeaderText {
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.personaHeaderText h1 {
   color: #EBEBEB;
   font-weight: 900;
   padding-bottom: 1em;
+  text-align: center;
 }
 
-.caseStudyPersonaBox p {
+.personaHeaderText p {
   color: #EBEBEB;
   font-weight: 700;
-  padding-left: 10em;
-  padding-right: 10em;
+  text-align: center;
 }
 
-.caseStudyPersonaKate {
-
+.willPersona {
+  color: #EBEBEB;
+  text-align: center;
 }
 
-.caseStudyPersonaWill {
-
+.willPersona img {
+    width: 163px;
+    height: 163px;
 }
 
-.caseStudyPersonaAlex {
-
+.katePersona {
+  color: #EBEBEB;
+  text-align: center;
 }
+
+.katePersona img {
+  width: 163px;
+  height: 163px;
 }
 
-@media screen and (min-width: 40em) {
+.alexPersona {
+  color: #EBEBEB;
+  text-align: center;
+}
+
+.alexPersona img {
+  width: 163px;
+  height: 163px;
+}
+
+
 .caseStudyUserStories {
   grid-row: 11;
   grid-column: 1/3;
   padding: 5em;
-  background-color: #E94545;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(1, auto);
+  background-color: #e94545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.caseStudyUserStories h2 {
+  color: #EBEBEB;
+  font-weight: 800;
+  text-align: center;
+}
+
+.caseStudyUserStories p {
+  color: #EBEBEB;
+  font-weight: 700;
+  text-align: center;
 }
 
 .leftTextStories h1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #EBEBEB;
   font-weight: 900;
+  text-align: center;
 }
 
 .leftTextStories {
-  grid-column: 1;
-  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftTextStories a {
+  padding: 2em;
 }
 
 .leftTextStories p {
@@ -458,26 +534,6 @@ main {
   padding-bottom: 2em;
 }
 
-.storiesIcon {
-  grid-column: 2;
-  grid-row: 1;
-  padding-top: 7.5em;
-  margin-right: 5em;
-}
-
-.caseStudyUserStories h2 {
-  color: #EBEBEB;
-  font-weight: 800;
-}
-
-.caseStudyUserStories p {
-  color: #EBEBEB;
-  font-weight: 700;
-  padding-right: 18em;
-}
-}
-
-@media screen and (min-width: 40em) {
 .caseStudyWireframes {
   grid-row: 13;
   grid-column: 1/3;
@@ -495,7 +551,14 @@ main {
   justify-content: center;
 }
 
-.caseStudyWireframes pre {
+.wireframeButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.caseStudyWireframes p {
   font-family: 'Raleway', sans-serif;
   color: #222222;
   font-weight: 700;
@@ -503,15 +566,15 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+  padding-bottom: 2em;
+  padding-top: 1em;
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyMockups {
   grid-row: 14;
   grid-column: 1/3;
   padding: 5em;
-  background-color: #000000;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -536,17 +599,87 @@ main {
   grid-column: 1;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .caseStudyMockupDetails {
   grid-row: 15;
   grid-column: 2;
-  float: left;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 }
 
-@media screen and (min-width: 40em) {
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .caseStudyRoadblock {
   grid-row: 16;
   grid-column: 1/3;
@@ -570,100 +703,96 @@ main {
   padding-right: 15em;
   text-align: center;
 }
-}
 
-@media screen and (min-width: 40em) {
-.caseStudyNewLookPage {
+.caseStudyNewProject1 {
   grid-row: 17;
   grid-column: 1;
-  object-fit: cover;
 }
 
-.caseStudyNewLookLogin {
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.caseStudyNewProject2 {
   grid-row: 17;
   grid-column: 2;
-  object-fit: fill;
-}
 }
 
-@media screen and (min-width: 40em) {
 .caseStudyBranding {
   grid-row: 18;
   grid-column: 1/3;
   padding: 5em;
   background-color: #FDDC3D;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(1, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .brandingTextSide {
   font-weight: 700;
   color: #222222;
-  padding-right: 5em;
-  padding-top: 4em;
+  padding-bottom: 2em;
+  text-align: center;
 }
 
 .brandingTextSide h1 {
   font-weight: 900;
   color: #222222;
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .boosterBranding {
-  margin-right: 5em;
-  margin: 3em;
-}
-}
-
-@media screen and (min-width: 40em) {
-.caseStudyFinishedProject {
-  grid-row: 19/20;
-  grid-column: 2;
-  padding: 5em;
-  background-color: #000000;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.caseStudyFinishedProject h1 {
-  font-weight: 900;
-  color: #EBEBEB;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
 
-.caseStudyFinishedProject p {
-  font-weight: 700;
-  color: #EBEBEB;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  font-size: 19px;
-}
-
-.caseStudyFinishedHome {
-  grid-row: 19/21;
-  grid-column: 1;
-  object-fit: cover;
-}
-
-.caseStudyFinishedTimeline {
-  grid-row: 20/21;
-  grid-column: 2;
-}
-}
-
-@media screen and (min-width: 40em) {
 .caseStudyUserTesting {
   grid-row: 21;
   grid-column: 1/3;
   padding: 5em;
   background-color: #E94545;
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(2, auto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .testingText h1 {
@@ -674,12 +803,16 @@ main {
   margin-left: 0.5em;
 }
 
-.testingImage img {
-  margin-left: 12em;
-}
+.testingText p {
+  color: #EBEBEB;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-@media screen and (min-width: 40em) {
+.userTestingButton {
+  padding: 3em;
+}
+
 .caseStudyConclusion {
   grid-row: 22;
   grid-column: 1/3;
@@ -708,19 +841,17 @@ i {
   color: #222222;
 }
 
-.caseStudyConclusion pre {
-  font-family: 'Raleway', sans-serif;
+.caseStudyConclusion p {
   font-weight: 700;
   color: #222222;
-}
+  padding: 3em;
 }
 
-@media screen and (min-width: 40em) {
 .backToTopButton {
   grid-row: 23;
   grid-column: 1/3;
   padding: 3em;
-  background-color: #000000;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;

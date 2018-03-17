@@ -34,7 +34,8 @@ main {
   }
 
   .text1box {
-    padding-top: 1em;
+    padding-top: 5em;
+    /*padding-top: 10em; (Responsive)*/
   }
 
   .text1box h1 {
@@ -306,19 +307,20 @@ main {
 *
 */
 
-@media (min-width: 768px) {
-.wrapper {
-  display:grid;
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
-  grid-template-columns: 1fr 1fr;
-}
+
+
+@media screen and (max-width: 480px) {
+  section.wrapper {
+    display:grid;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    grid-template-columns: 100%;
+  }
 }
 
-@media screen and (min-width: 23em) {
-.box1 {
-  grid-row: 1;
-  grid-column: 1;
+@media screen and (max-width: 480px) {
+section.box1 {
+  grid-area: 1;
   background: #FDDC3D;
   padding-top: 6em;
   padding-bottom: 4em;
@@ -328,10 +330,9 @@ main {
 }
 }
 
-@media screen and (min-width: 23em) {
-  .box2 {
-    grid-row: 1/2;
-    grid-column: 2;
+@media screen and (max-width: 480px) {
+  section.box2 {
+    grid-area: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,18 +347,16 @@ main {
   }
 }
 
-@media screen and (min-width: 23em) {
-  .box3 {
-    grid-row: 2/4;
-    grid-column: 1;
+@media screen and (max-width: 480px) {
+  section.box3 {
+    grid-area: 3;
     display: flex;
   }
 }
 
-@media screen and (min-width: 23em) {
-  .box4 {
-    grid-row: 2/4;
-    grid-column: 2;
+@media screen and (max-width: 480px) {
+  section.box4 {
+    grid-area: 4;
     background: #E94545;
     padding-top: 20%;
     padding-bottom: 20%;
@@ -368,10 +367,9 @@ main {
   }
 }
 
-@media screen and (min-width: 23em) {
-  .box5 {
-    grid-row: 4/6;
-    grid-column: 1;
+@media screen and (max-width: 480px) {
+  section.box5 {
+    grid-area: 5;
     text-align: center;
     background: #9E8BAC;
     padding-top: 20%;
@@ -394,19 +392,16 @@ main {
   }
 }
 
-@media screen and (min-width: 23em) {
-  .box6 {
-    grid-row: 4/6;
-    grid-column: 2;
+@media screen and (max-width: 480px) {
+  section.box6 {
+    grid-area: 6;
     display: flex;
   }
 }
 
-@media screen and (min-width: 23em) {
-  .box8 {
-    grid-row: 6;
-    grid-column-start: 1;
-    grid-column-end: 3;
+@media screen and (max-width: 480px) {
+  section.box8 {
+    grid-area: 7;
     background: #FDDC3D;
     display: flex;
     flex-direction: column;

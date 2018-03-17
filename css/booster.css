@@ -1,3 +1,9 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -11,13 +17,11 @@ main {
   flex: 1;
 }
 
-/*p {
-  font-size: 10vw
-}*/
 
 .wrapper {
   display:grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 2000px;
 }
 
 .caseStudyHeader {
@@ -207,6 +211,9 @@ main {
   grid-row: 4/6;
   grid-column: 2;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D8DAD7
 }
 
 .caseStudyAnswer {
@@ -879,39 +886,50 @@ i {
     background-color: #EBEBEB; /* Add a dark-grey background on hover */
 }
 
-@media (min-width: 768px) {
-  div.wrapper {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-}
+/* Medium and small screens (640px) */
+@media (min-width: 640px) {
+  html { font-size: 112%; }
 }
 
-@media screen and (min-width: 23em) {
-  div.caseStudyHeader {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  padding: 1em;
-}
+/* Large screens (1024px) */
+@media (min-width: 1024px) {
+  html { font-size: 120%; }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
+  div.caseStudyTopPhoto {
+    flex-direction: column;
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 640px) {
   div.caseStudyAboutProjectBanner {
     flex-direction: column;
     float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   div.toolsUsed {
   flex-direction: column;
   float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
   div.aboutProject {
   flex-direction: column;
   float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
   div.whatIDid {
   flex-direction: column;
   float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 }

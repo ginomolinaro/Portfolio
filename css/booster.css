@@ -473,6 +473,10 @@ main {
   text-align: center;
 }
 
+.willPersona h3 {
+  padding-top: 1em;
+}
+
 .willPersona img {
     width: 163px;
     height: 163px;
@@ -483,6 +487,10 @@ main {
   text-align: center;
 }
 
+.katePersona h3 {
+  padding-top: 1em;
+}
+
 .katePersona img {
   width: 163px;
   height: 163px;
@@ -491,6 +499,10 @@ main {
 .alexPersona {
   color: #EBEBEB;
   text-align: center;
+}
+
+.alexPersona h3 {
+  padding-top: 1em;
 }
 
 .alexPersona img {
@@ -886,50 +898,312 @@ i {
     background-color: #EBEBEB; /* Add a dark-grey background on hover */
 }
 
-/* Medium and small screens (640px) */
-@media (min-width: 640px) {
-  html { font-size: 112%; }
+
+/*
+*
+* MEDIA QUERIES
+*
+*/
+
+
+@media screen and (max-width: 480px) {
+  div.wrapper {
+    display:grid;
+    grid-column-gap: 12px;
+    grid-template-columns: 100%;
+  }
 }
 
-/* Large screens (1024px) */
-@media (min-width: 1024px) {
-  html { font-size: 120%; }
+@media screen and (max-width: 480px) {
+  div.caseStudyHeader {
+    grid-area: 1;
+    background-color: #FDDC3D;
+    padding: 1em;
+  }
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 480px) {
+    div.caseStudyName {
+    grid-area: 2;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.caseStudyName img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.caseStudyName p {
+  color: #EBEBEB;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+}
+
+@media screen and (max-width: 480px) {
   div.caseStudyTopPhoto {
+    grid-area: 3;
     flex-direction: column;
     float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
+}
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 480px) {
   div.caseStudyAboutProjectBanner {
+    grid-area: 4;
     flex-direction: column;
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
   }
 
   div.toolsUsed {
   flex-direction: column;
-  float: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
 }
 
   div.aboutProject {
   flex-direction: column;
-  float: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
 }
 
   div.whatIDid {
   flex-direction: column;
-  float: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
 }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyOverview {
+      grid-area: 5;
+      background-color: #E94545;
+      padding: 4em;
+    }
+
+    div.caseStudyOverview h1 {
+      color: #EBEBEB;
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+
+    div.caseStudyOverview p {
+      color: #EBEBEB;
+      font-weight: 700;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyChallenge {
+    grid-area: 7;
+    background-color: #222222;
+    padding: 4em;
+    }
+
+    div.caseStudyChallenge h1 {
+      color: #EBEBEB;
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+
+    div.caseStudyChallenge p {
+      color: #EBEBEB;
+      font-weight: 700;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  div.challengeAndOverviewPicture {
+      grid-area: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #D8DAD7
+    }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyAnswer {
+      grid-area: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+    }
+
+    div.answerIcon {
+      padding-top: 1em;
+    }
+
+    div.answerTextBox {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div.answerTextBox h1 {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyUserResearch {
+    grid-area: 9;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyAnalysis {
+    grid-area: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+    }
+  div.competitorsPicture {
+    padding-top: 3em;
+  }
+  div.analysisParagraph {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyPersonaBox {
+    grid-area: 11;
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyUserStories {
+    grid-area: 12;
+    padding: 3em;
+  }
+  div.leftTextStories p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyWireframes {
+    grid-area: 13;
+  }
+  div.wireframeButtons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockups {
+    grid-area: 14;
+    text-align: center;
+  }
+  div.caseStudyMockups p {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockupHome {
+    grid-area: 15;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockupDetails {
+    grid-area: 16;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyRoadblock {
+    grid-area: 17;
+    text-align: center;
+  }
+  div.caseStudyRoadblock p {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyNewProject1 {
+    grid-area: 18;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyNewProject2 {
+    grid-area: 19;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyBranding {
+    grid-area: 20;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyUserTesting {
+    grid-area: 21;
+    text-align: center;
+    padding: 1em;
+  }
+  div.testingText p {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyConclusion {
+    grid-area: 22;
+    padding: 1em;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.backToTopButton {
+    grid-area: 23;
+
+  }
 }

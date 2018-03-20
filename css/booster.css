@@ -1074,12 +1074,21 @@ i {
 @media screen and (max-width: 480px) {
   div.caseStudyUserResearch {
     grid-area: 9;
-    padding: 3em;
+    padding: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     }
+    div.feedbackAndSurveyBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      }
+      div.researchParagraphs {
+        font-size: 17px;
+        }
 }
 
 @media screen and (max-width: 480px) {
@@ -1104,6 +1113,10 @@ i {
   div.caseStudyPersonaBox {
     grid-area: 11;
     padding: 2em;
+  }
+  div.line img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -1197,7 +1210,11 @@ i {
   div.caseStudyConclusion {
     grid-area: 22;
     padding: 1em;
-
+    text-align: center;
+  }
+  div.caseStudyConclusion p {
+    padding: 0;
+    text-align: center;
   }
 }
 

@@ -986,6 +986,15 @@ i {
     align-items: center;
     flex-direction: column;
     }
+    div.feedbackAndSurveyBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      }
+      div.researchParagraphs {
+        font-size: 17px;
+        }
 }
 
 @media screen and (max-width: 480px) {
@@ -1003,6 +1012,9 @@ i {
   }
   div.analysisHeading {
     text-align: center;
+  }
+  div.analysisParagraph {
+    font-size: 17px;
   }
 }
 
@@ -1064,6 +1076,7 @@ i {
 @media screen and (max-width: 480px) {
   div.caseStudyBranding {
     grid-area: 18;
+    padding: 2em;
   }
 }
 
@@ -1073,12 +1086,20 @@ i {
     text-align: center;
     padding: 2em;
   }
+  div.testingText p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   div.caseStudyConclusion {
     grid-area: 20;
-
+    padding: 1em;
+    text-align: center;
+  }
+  div.caseStudyConclusion p {
+    padding: 0;
+    text-align: center;
   }
 }
 

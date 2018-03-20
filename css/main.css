@@ -35,21 +35,19 @@ main {
 }
 
   .text1box {
-    padding-top: 5em;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: column;
+    padding-top: 10em;
   }
 
   .text1box h1 {
 	  font-size: 40px;
 	  font-weight: normal;
+    padding-bottom: 1em;
 }
 
   .text1box h2 {
 	  font-size: 35px;
 	  font-weight: bold;
+    padding-bottom: 1em;
 }
 
   .text1box p {
@@ -266,7 +264,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1em;
+    padding: 2em;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -281,6 +279,7 @@ main {
   .box8 h1 {
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 1em;
   }
 
 .box8icons {
@@ -288,6 +287,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1em;
 }
 
   .box8icons a {
@@ -327,6 +327,10 @@ section.box1 {
 
 section.text1box h1 {
   font-size: 25px;
+}
+
+section.text1box {
+  padding-top: 5em;
 }
 
 section.box1icon {

@@ -3,7 +3,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
 }
 
@@ -963,22 +963,23 @@ i {
   div.caseStudyAboutProjectBanner {
     grid-area: 4;
     flex-direction: column;
-
+    float: left;
+    padding: 2em;
   }
 
   div.toolsUsed {
   flex-direction: column;
-
+  width: auto;
 }
 
   div.aboutProject {
   flex-direction: column;
-
+  width: auto;
 }
 
   div.whatIDid {
   flex-direction: column;
-
+  width: auto;
 }
 }
 
@@ -1138,6 +1139,7 @@ i {
   div.caseStudyMockups {
     grid-area: 14;
     text-align: center;
+    padding: 2em;
   }
   div.caseStudyMockups p {
     padding: 0;
@@ -1161,6 +1163,7 @@ i {
   div.caseStudyRoadblock {
     grid-area: 17;
     text-align: center;
+    padding: 2em;
   }
   div.caseStudyRoadblock p {
     padding: 0;

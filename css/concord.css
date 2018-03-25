@@ -11,6 +11,23 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+li {
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
 
 .wrapper {
   display:grid;
@@ -57,7 +74,7 @@ main {
 .caseStudyName p {
   color: #EBEBEB;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -73,10 +90,10 @@ main {
     position: relative;
     background-color: #FEA780;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     padding: 20px;
-    width: 250px;
+    width: 220px;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -124,8 +141,8 @@ main {
 }
 
 .caseStudyAboutProjectBanner h1 {
-  font-weight: 800;
-  padding-bottom: 0.5em;
+  font-weight: 900;
+  padding: 0.3em;
 }
 
 .toolsUsed {
@@ -133,10 +150,13 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: left;
   align-items: center;
   flex-direction: column;
   padding: 3em;
+}
+
+.toolsUsed li {
+  list-style-type: none;
 }
 
 .aboutProject {
@@ -144,7 +164,6 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 3em;
@@ -155,10 +174,13 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: right;
   align-items: center;
   flex-direction: column;
   padding: 3em;
+}
+
+.whatIDid li {
+  list-style-type: none;
 }
 
 .caseStudyOverview {
@@ -176,7 +198,8 @@ main {
 
 .caseStudyOverview p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
+  width: 80%;
 }
 
 .caseStudyChallenge {
@@ -194,7 +217,8 @@ main {
 
 .caseStudyChallenge p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
+  width: 80%;
 }
 
 .challengeAndOverviewPicture {
@@ -214,7 +238,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 4em;
+  padding: 2em;
 }
 
 .answerIcon {
@@ -238,27 +262,32 @@ main {
 .answerTextBox h1 {
   color: #222222;
   font-weight: 900;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .answerTextBox p {
   color: #222222;
-  font-weight: 600;
+  font-weight: 400;
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .caseStudyUserResearch {
   grid-row: 7;
   grid-column: 1/3;
   background-color: #9E8BAC;
-  padding: 3em;
+  padding: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +319,16 @@ main {
   padding: 4em;
 }
 
+.feedbackBox h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5em;
+}
+
+.feedbackBox li {
+  list-style-type: none;
+}
+
 .feedbackAndSurveyBox {
   display: flex;
   flex-direction: row;
@@ -309,21 +348,35 @@ main {
   padding: 4em;
 }
 
+.surveyBox h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5em;
+}
+
+.surveyBox li {
+  list-style-type: none;
+}
+
 .feedbackAndSurveyBox img {
   color: #EBEBEB;
   padding: 4em;
 }
 
 .researchParagraphs {
-  color: #EBEBEB;
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.researchParagraphs p {
+  color: #EBEBEB;
   text-align: center;
+  width: 60%;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
 
 .researchButtons {
@@ -337,7 +390,7 @@ main {
     position: relative;
     background-color: #FEA780;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     padding: 20px;
     width: 250px;
@@ -394,6 +447,7 @@ main {
 
 .analysisHeading h1 {
   font-weight: 900;
+  padding-bottom: 1em;
   color: #222222;
   display: flex;
   flex-direction: column;
@@ -415,16 +469,25 @@ main {
 }
 
 .analysisParagraph {
-  font-size: 20px;
   color: #222222;
   font-weight: 600;
 }
 
+.analysisParagraph p {
+  width: 80%;
+}
+
+
+
 .caseStudyPersonaBox {
   grid-row: 9;
   grid-column: 1/3;
-  padding: 5em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: #222222;
+  display: flex;
 }
 
 .personaHeaderText {
@@ -445,20 +508,38 @@ main {
   text-align: center;
 }
 
-.line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.line img {
   padding: 3em;
+  height: 800px;
+  width: 2px;
+}
+
+.flex-contain {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .eljamPersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
+}
+
+.eljamPersona h1 {
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.eljamPersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
 }
 
 .eljamPersona h3 {
-  padding-top: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .eljamPersona img {
@@ -469,6 +550,7 @@ main {
 .nataliePersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
 }
 
 .nataliePersona img {
@@ -476,13 +558,26 @@ main {
   height: 163px;
 }
 
+.nataliePersona h1 {
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.nataliePersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
 .nataliePersona h3 {
-  padding-top: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .roshanPersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
 }
 
 .roshanPersona img {
@@ -490,8 +585,20 @@ main {
   height: 163px;
 }
 
+.roshanPersona h1 {
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.roshanPersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
 .roshanPersona h3 {
-  padding-top: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .caseStudyUserStories {
@@ -513,8 +620,9 @@ main {
 
 .caseStudyUserStories p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  width: 60%;
 }
 
 .leftTextStories h1 {
@@ -563,10 +671,11 @@ main {
 
 .caseStudyWireframes p {
   color: #222222;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 3em;
+  width: 60%;
 }
 
 .caseStudyMockups {
@@ -585,12 +694,14 @@ main {
   font-weight: 800;
   padding-bottom: 1em;
   font-size: 30px;
+  font-weight: 900;
 }
 
 .caseStudyMockups p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  width: 60%;
 }
 
 .caseStudyMockupHome {
@@ -615,15 +726,16 @@ main {
 
 .caseStudyRoadblock h1 {
   color: #EBEBEB;
-  font-weight: 800;
+  font-weight: 900;
   padding-bottom: 1em;
   font-size: 30px;
 }
 
 .caseStudyRoadblock p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  width: 60%;
 }
 
 .caseStudyNewLookPage {
@@ -652,6 +764,14 @@ main {
   color: #222222;
   text-align: center;
   padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.concordBrandingTextSide p {
+  width: 60%;
 }
 
 .concordBrandingPhoto {
@@ -711,7 +831,7 @@ main {
 }
 
 .testingText h1 {
-  font-weight: 800;
+  font-weight: 900;
   color: #EBEBEB;
   text-align: center;
   padding-bottom: 2em;
@@ -721,10 +841,17 @@ main {
   padding: 3em;
 }
 
+.testingText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .testingText p {
   color: #EBEBEB;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
 }
 
 .caseStudyConclusion {
@@ -756,9 +883,10 @@ i {
 }
 
 .caseStudyConclusion p {
-  font-weight: 700;
+  font-weight: 400;
   color: #222222;
   padding: 3em;
+  width: 60%
 }
 
 .caseStudyConclusion img {
@@ -779,22 +907,67 @@ i {
   justify-content: center;
 }
 
-.myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+.back-to-top {
+	position: fixed;
+	right: 1%;
+	bottom: -7.5%;
+	height: 15px;
+	width: 40px;
+	font-size: 10px;
+	font-weight: bold;
+	color: transparent;
+	opacity: 0.5;
+	z-index: 3;
+	visibility: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
+	background-color: #858585;
+	&:hover,
+	&:focus {
+		opacity: 1;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
 }
 
-.myBtn:hover {
-    background-color: #EBEBEB; /* Add a dark-grey background on hover */
+.back-to-top::before,
+.back-to-top::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top: 0;
+}
+
+.back-to-top::before {
+	top: -20px;
+	z-index: 4;
+	border-bottom: 20px solid #858585;
+}
+
+.back-to-top::after {
+	bottom: 0;
+	z-index: 5;
+	border-bottom: 20px solid #505050;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+	height: 40px;
+	color: #212223;
+}
+
+.show-back-to-top {
+	display: block;
+	bottom: 1.25%;
+	visibility: visible;
 }
 
 
@@ -898,8 +1071,9 @@ i {
     }
 
     div.caseStudyOverview p {
-      font-weight: 700;
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -908,7 +1082,6 @@ i {
     grid-area: 7;
     padding: 4em;
     }
-
     div.caseStudyChallenge h1 {
       font-weight: 900;
       padding-bottom: 0.5em;
@@ -916,8 +1089,9 @@ i {
     }
 
     div.caseStudyChallenge p {
-      font-weight: 700;
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -937,7 +1111,7 @@ i {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2em;
+      padding: 3em;
     }
 
     div.answerIcon {
@@ -948,14 +1122,15 @@ i {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      padding: 1em;
     }
 
     div.answerTextBox {
-      padding: 2em;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
     }
 
     div.answerTextBox h1 {
@@ -974,6 +1149,7 @@ i {
       align-items: center;
       justify-content: center;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -992,8 +1168,9 @@ i {
       align-items: center;
       flex-direction: column;
       }
-      div.researchParagraphs {
+      div.researchParagraphs p {
         font-size: 17px;
+        width: 100%;
         }
 }
 
@@ -1013,19 +1190,34 @@ i {
   div.analysisHeading {
     text-align: center;
   }
-  div.analysisParagraph {
+  div.analysisParagraph p {
+    width: 100%;
     font-size: 17px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  div.caseStudyPersonaBox {
-    grid-area: 11;
-    padding: 2em;
+  @media screen and (max-width: 480px) {
+    div.caseStudyPersonaBox, .flex-contain {
+      grid-area: 11;
+      flex-direction: column;
+      float: left;
+      padding: 2em;
+    }
+    div.line img {
+      width: 0;
+      height: 0;
+    }
+    div.eljamPersona {
+    flex-direction: column;
+    width: auto;
   }
-  div.line img {
-    max-width: 100%;
-    height: auto;
+    div.nataliePersona {
+    flex-direction: column;
+    width: auto;
+  }
+    div.roshanPersona {
+    flex-direction: column;
+    width: auto;
   }
 }
 
@@ -1034,12 +1226,21 @@ i {
     grid-area: 12;
     padding: 3em;
   }
+  div.leftTextStories p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   div.caseStudyWireframes {
     grid-area: 13;
-    padding: 2em;
+    padding: 3em;
+  }
+  div.caseStudyWireframes p {
+    width: 100%;
+  }
+  div.caseStudyWireframes h1 {
+    padding: 1em;
   }
 }
 
@@ -1047,14 +1248,18 @@ i {
   div.caseStudyMockups {
     grid-area: 14;
     text-align: center;
-    padding: 3em;
+    padding: 2em;
+  }
+  div.caseStudyMockups p {
+    width: 105%;
+  }
+  div.caseStudyMockups h1 {
   }
 }
 
 @media screen and (max-width: 480px) {
   div.caseStudyMockupHome {
     grid-area: 15;
-
   }
 }
 
@@ -1063,7 +1268,12 @@ i {
   div.caseStudyRoadblock {
     grid-area: 16;
     text-align: center;
-    padding: 2.5em;
+    padding: 2em;
+  }
+  div.caseStudyRoadblock p {
+    width: 105%;
+  }
+  div.caseStudyRoadblock h1 {
   }
 }
 
@@ -1078,6 +1288,12 @@ i {
     grid-area: 18;
     padding: 2em;
   }
+  div.caseStudyBranding p {
+    width: 100%;
+  }
+  div.caseStudyBranding h1 {
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1088,6 +1304,10 @@ i {
   }
   div.testingText p {
     font-size: 17px;
+    width: 103%;
+  }
+  div.testingText h1 {
+    padding: 1em;
   }
 }
 
@@ -1098,8 +1318,11 @@ i {
     text-align: center;
   }
   div.caseStudyConclusion p {
-    padding: 0;
     text-align: center;
+    width: 95%;
+  }
+  div.caseStudyConclusion h1 {
+    padding: 1em;
   }
 }
 
@@ -1199,36 +1422,34 @@ i {
 @media screen and (max-width: 768px) {
   div.caseStudyOverview {
       grid-area: 5;
-      padding: 4em;
+      padding: 3em;
     }
-
-    div.caseStudyOverview h1 {
+    div.overviewTextBox h1 {
       font-weight: 900;
       padding-bottom: 0.5em;
       text-align: center;
     }
-
-    div.caseStudyOverview p {
-      font-weight: 700;
+    div.overviewTextBox p {
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
   div.caseStudyChallenge {
     grid-area: 7;
-    padding: 4em;
+    padding: 3em;
     }
-
-    div.caseStudyChallenge h1 {
+    div.challengeTextBox h1 {
       font-weight: 900;
       padding-bottom: 0.5em;
       text-align: center;
     }
-
-    div.caseStudyChallenge p {
-      font-weight: 700;
+    div.challengeTextBox p {
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -1250,7 +1471,6 @@ i {
       justify-content: center;
       padding: 2em;
     }
-
     div.answerIcon {
       display: flex;
       flex-direction: column;
@@ -1260,7 +1480,6 @@ i {
       width: 100%;
       object-fit: cover;
     }
-
     div.answerTextBox {
       padding: 2em;
       display: flex;
@@ -1268,7 +1487,6 @@ i {
       align-items: center;
       justify-content: center;
     }
-
     div.answerTextBox h1 {
       font-weight: 900;
       display: flex;
@@ -1277,9 +1495,8 @@ i {
       justify-content: center;
       text-align: center;
     }
-
     div.answerTextBox p {
-      font-weight: 600;
+      font-weight: 400;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1318,10 +1535,28 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  div.caseStudyPersonaBox {
+  div.caseStudyPersonaBox, .flex-contain {
     grid-area: 11;
+    flex-direction: column;
+    float: left;
     padding: 2em;
   }
+  div.line img {
+    width: 0;
+    height: 0;
+  }
+  div.eljamPersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.nataliePersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.roshanPersona {
+  flex-direction: column;
+  width: auto;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1393,5 +1628,16 @@ i {
   div.backToTopButton {
     grid-area: 21;
 
+  }
+}
+
+/*
+*
+*
+*/
+
+@media screen and (min-width: 1200px) {
+  .flex-contain {
+    width: 700px;
   }
 }

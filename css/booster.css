@@ -11,6 +11,23 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+li {
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
 
 .wrapper {
   display:grid;
@@ -59,13 +76,15 @@ main {
 .caseStudyName p {
   color: #EBEBEB;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 1em;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
 
 .prototypeButton {
@@ -75,10 +94,10 @@ main {
     position: relative;
     background-color: #FEA780;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     padding: 20px;
-    width: 250px;
+    width: 220px;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -128,8 +147,8 @@ main {
 }
 
 .caseStudyAboutProjectBanner h1 {
-  font-weight: 800;
-  padding-bottom: 0.5em;
+  font-weight: 900;
+  padding: 0.3em;
 }
 
 .toolsUsed {
@@ -137,10 +156,13 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: left;
   align-items: center;
   flex-direction: column;
   padding: 3em;
+}
+
+.toolsUsed li {
+  list-style-type: none;
 }
 
 .aboutProject {
@@ -148,7 +170,6 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 3em;
@@ -159,46 +180,53 @@ main {
   color: #222222;
   text-align: center;
   display: flex;
-  justify-content: right;
   align-items: center;
   flex-direction: column;
   padding: 3em;
+}
+
+.whatIDid li {
+  list-style-type: none;
 }
 
 .caseStudyOverview {
   grid-row: 4/5;
   grid-column: 1;
   background-color: #E94545;
-  padding: 4em;
+  padding: 4.5em;
 }
 
 .caseStudyOverview h1 {
   color: #EBEBEB;
   font-weight: 900;
+  padding-top: 1em;
   padding-bottom: 0.5em;
 }
 
 .caseStudyOverview p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
+  width: 80%;
 }
 
 .caseStudyChallenge {
   grid-row: 5/6;
   grid-column: 1;
   background-color: #222222;
-  padding: 4em;
+  padding: 4.5em;
 }
 
 .caseStudyChallenge h1 {
   color: #EBEBEB;
   font-weight: 900;
+  padding-top: 1em;
   padding-bottom: 0.5em;
 }
 
 .caseStudyChallenge p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
+  width: 80%;
 }
 
 .challengeAndOverviewPicture {
@@ -226,6 +254,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -242,6 +271,9 @@ main {
 .answerTextBox h1 {
   color: #222222;
   font-weight: 900;
+  padding: 0.5em;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -250,8 +282,10 @@ main {
 
 .answerTextBox p {
   color: #222222;
-  font-weight: 600;
+  font-weight: 400;
   font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -262,7 +296,7 @@ main {
   grid-row: 7;
   grid-column: 1/3;
   background-color: #E94545;
-  padding: 3em;
+  padding: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,6 +328,16 @@ main {
   padding: 4em;
 }
 
+.feedbackBox h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5em;
+}
+
+.feedbackBox li {
+  list-style-type: none;
+}
+
 .feedbackAndSurveyBox {
   display: flex;
   flex-direction: row;
@@ -313,21 +357,35 @@ main {
   padding: 4em;
 }
 
+.surveyBox h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5em;
+}
+
+.surveyBox li {
+  list-style-type: none;
+}
+
 .feedbackAndSurveyBox img {
   color: #EBEBEB;
   padding: 4em;
 }
 
 .researchParagraphs {
-  color: #EBEBEB;
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.researchParagraphs p {
+  color: #EBEBEB;
   text-align: center;
+  width: 60%;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
 
 .researchButtons {
@@ -341,7 +399,7 @@ main {
     position: relative;
     background-color: #FEA780;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     padding: 20px;
     width: 300px;
@@ -383,26 +441,26 @@ main {
   background-color: #FDDC3D;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding: 5em;
 }
 
-.textSide {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-}
-
-.analysisHeading h1 {
+.analysisParagraph h1 {
   font-weight: 900;
   color: #222222;
+  padding-bottom: 1em;
+}
+
+.analysisParagraph {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.analysisParagraph p {
+  width: 90%;
+  color: #222222;
+  font-weight: 400;
 }
 
 .competitorsPicture {
@@ -413,28 +471,19 @@ main {
 }
 
 .competitorsPicture img {
-  height: 75%;
-  width: 75%;
-  object-fit: cover;
-}
-
-.analysisParagraph {
-  font-size: 20px;
-  color: #222222;
-  font-weight: 600;
-}
-
-.analysisParagraph {
-  font-size: 20px;
-  color: #222222;
-  font-weight: 600;
+  height: auto;
+  max-width: 70%;
 }
 
 .caseStudyPersonaBox {
   grid-row: 9;
   grid-column: 1/3;
-  padding: 5em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: #222222;
+  display: flex;
 }
 
 .personaHeaderText {
@@ -442,11 +491,10 @@ main {
   padding-bottom: 3em;
 }
 
-.line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.line img {
   padding: 3em;
+  height: 800px;
+  width: 2px;
 }
 
 .personaHeaderText h1 {
@@ -462,13 +510,31 @@ main {
   text-align: center;
 }
 
+.flex-contain {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .willPersona {
   color: #EBEBEB;
   text-align: center;
 }
 
-.willPersona h3 {
+.willPersona h1 {
+  font-weight: 700;
   padding-top: 1em;
+}
+
+.willPersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.willPersona h3 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .willPersona img {
@@ -481,8 +547,20 @@ main {
   text-align: center;
 }
 
-.katePersona h3 {
+.katePersona h1 {
+  font-weight: 700;
   padding-top: 1em;
+}
+
+.katePersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.katePersona h3 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .katePersona img {
@@ -495,8 +573,20 @@ main {
   text-align: center;
 }
 
-.alexPersona h3 {
+.alexPersona h1 {
+  font-weight: 700;
   padding-top: 1em;
+}
+
+.alexPersona h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.alexPersona h3 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .alexPersona img {
@@ -520,12 +610,14 @@ main {
   color: #EBEBEB;
   font-weight: 800;
   text-align: center;
+  font-size: 18px;
 }
 
 .caseStudyUserStories p {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  width: 60%;
 }
 
 .leftTextStories h1 {
@@ -557,11 +649,14 @@ main {
   background-color: #FDDC3D;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .caseStudyWireframes h1 {
   color: #222222;
   font-weight: 900;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -572,24 +667,19 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 .caseStudyWireframes p {
-  font-family: 'Raleway', sans-serif;
-  color: #222222;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 60%;
+  padding: 1em;
   text-align: center;
-  padding-bottom: 2em;
-  padding-top: 1em;
 }
 
 .caseStudyMockups {
   grid-row: 14;
   grid-column: 1/3;
-  padding: 5em;
+  padding: 4em;
   background-color: #222222;
   display: flex;
   flex-direction: column;
@@ -599,20 +689,30 @@ main {
 
 .caseStudyMockups h1 {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 900;
+  padding: 1em;
 }
 
 .caseStudyMockups p {
   color: #EBEBEB;
-  font-weight: 700;
-  padding-left: 15em;
-  padding-right: 15em;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 60%;
+}
+
+.firstEditionMockups {
+  display: flex;
+  flex-direction: row;
 }
 
 .caseStudyMockupHome {
   grid-row: 15;
   grid-column: 1;
+  width: 50%;
+  background-color: #0D0D0D;
 }
 
 .container {
@@ -656,6 +756,7 @@ main {
 .caseStudyMockupDetails {
   grid-row: 15;
   grid-column: 2;
+  width: 50%;
 }
 
 .container {
@@ -709,20 +810,30 @@ main {
 
 .caseStudyRoadblock h1 {
   color: #EBEBEB;
-  font-weight: 700;
+  font-weight: 900;
+  padding-bottom: 1em;
 }
 
 .caseStudyRoadblock p {
   color: #EBEBEB;
-  font-weight: 700;
-  padding-left: 15em;
-  padding-right: 15em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 60%;
 }
 
+
+.newProjectImages {
+  display: flex;
+  flex-direction: row;
+}
 .caseStudyNewProject1 {
   grid-row: 17;
   grid-column: 1;
+  width: 50%;
+  background-color: #333333;
 }
 
 .container {
@@ -766,6 +877,7 @@ main {
 .caseStudyNewProject2 {
   grid-row: 17;
   grid-column: 2;
+  width: 50%;
 }
 
 .caseStudyBranding {
@@ -784,6 +896,10 @@ main {
   color: #222222;
   padding-bottom: 2em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .brandingTextSide h1 {
@@ -791,6 +907,14 @@ main {
   color: #222222;
   padding-bottom: 1em;
   text-align: center;
+}
+
+.brandingTextSide p {
+  font-weight: 400;
+  color: #222222;
+  padding-bottom: 1em;
+  text-align: center;
+  width: 60%;
 }
 
 .boosterBranding {
@@ -812,17 +936,25 @@ main {
 }
 
 .testingText h1 {
-  font-weight: 800;
+  font-weight: 900;
   color: #FFFFFF;
   text-align: center;
   padding-bottom: 2em;
   margin-left: 0.5em;
 }
 
+.testingText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .testingText p {
   color: #EBEBEB;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  text-align: center;
 }
 
 .userTestingButton {
@@ -858,15 +990,16 @@ i {
 }
 
 .caseStudyConclusion p {
-  font-weight: 700;
+  font-weight: 400;
   color: #222222;
   padding: 3em;
+  width: 60%;
 }
 
 .backToTopButton {
   grid-row: 23;
   grid-column: 1/3;
-  padding: 3em;
+  padding: 2em;
   background-color: #222222;
   display: flex;
   flex-direction: column;
@@ -874,24 +1007,70 @@ i {
   justify-content: center;
 }
 
-.myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+
+.back-to-top {
+	position: fixed;
+	right: 1%;
+	bottom: -7.5%;
+	height: 15px;
+	width: 40px;
+	font-size: 10px;
+	font-weight: bold;
+	color: transparent;
+	opacity: 0.5;
+	z-index: 3;
+	visibility: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
+	background-color: #858585;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
 }
 
-.myBtn:hover {
-    background-color: #EBEBEB; /* Add a dark-grey background on hover */
+.back-to-top::before,
+.back-to-top::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top: 0;
 }
 
+.back-to-top::before {
+	top: -20px;
+	z-index: 4;
+	border-bottom: 20px solid #858585;
+}
+
+.back-to-top::after {
+	bottom: 0;
+	z-index: 5;
+	border-bottom: 20px solid #505050;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+	height: 40px;
+	color: #212223;
+}
+
+.show-back-to-top {
+	display: block;
+	bottom: 1.25%;
+	visibility: visible;
+}
 
 /*
 *
@@ -987,20 +1166,18 @@ i {
   div.caseStudyOverview {
       grid-area: 5;
       background-color: #E94545;
-      padding: 4em;
+      padding: 2em;
     }
-
-    div.caseStudyOverview h1 {
-      color: #EBEBEB;
+    div.overviewTextBox {
+    }
+    div.overviewTextBox h1 {
       font-weight: 900;
-      padding-bottom: 0.5em;
-      text-align: center;
+      padding: 1em;
     }
-
-    div.caseStudyOverview p {
-      color: #EBEBEB;
-      font-weight: 700;
+    div.overviewTextBox p {
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -1010,18 +1187,15 @@ i {
     background-color: #222222;
     padding: 4em;
     }
-
-    div.caseStudyChallenge h1 {
-      color: #EBEBEB;
+    div.challengeTextBox h1 {
       font-weight: 900;
       padding-bottom: 0.5em;
       text-align: center;
     }
-
-    div.caseStudyChallenge p {
-      color: #EBEBEB;
-      font-weight: 700;
+    div.challengeTextBox p {
+      font-weight: 400;
       text-align: center;
+      width: 100%;
     }
 }
 
@@ -1042,7 +1216,7 @@ i {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2em;
+      padding: 3em;
     }
 
     div.answerIcon {
@@ -1055,6 +1229,7 @@ i {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
     }
 
     div.answerTextBox h1 {
@@ -1063,6 +1238,9 @@ i {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    div.answerTextBox p {
+      width: 100%;
     }
 }
 
@@ -1081,12 +1259,406 @@ i {
       align-items: center;
       flex-direction: column;
       }
-      div.researchParagraphs {
+      div.researchParagraphs p {
         font-size: 17px;
+        width: 102%;
         }
 }
 
 @media screen and (max-width: 480px) {
+  div.caseStudyAnalysis {
+    grid-area: 10;
+    padding-bottom: 4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  div.competitorsPicture {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  div.competitorsPicture img {
+    width: 50%;
+    height: 50%;
+  }
+  div.analysisHeading h1 {
+    padding-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.analysisParagraph p {
+    width: 80%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.analysisParagraph {
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyPersonaBox, .flex-contain {
+    grid-area: 11;
+    flex-direction: column;
+    float: left;
+    padding: 2em;
+  }
+  div.line img {
+    width: 0;
+    height: 0;
+  }
+  div.willPersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.willPersona p {
+    width: 100%;
+}
+  div.katePersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.alexPersona {
+  flex-direction: column;
+  width: auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyUserStories {
+    grid-area: 12;
+    padding: 4em;
+  }
+  div.leftTextStories p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyWireframes {
+    grid-area: 13;
+  }
+  div.wireframeButtons {
+    flex-direction: column;
+  }
+  div.caseStudyWireframes p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockups {
+    grid-area: 14;
+    text-align: center;
+    padding: 2em;
+  }
+  div.caseStudyMockups h1 {
+    width: 95%;
+  }
+  div.caseStudyMockups p {
+    width: 103%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.firstEditionMockups {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockupHome {
+    grid-area: 15;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyMockupDetails {
+    grid-area: 16;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyRoadblock {
+    grid-area: 17;
+    text-align: center;
+    padding: 2em;
+  }
+  div.caseStudyRoadblock h1 {
+    width: 95%;
+  }
+  div.caseStudyRoadblock p {
+    width: 103%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.newProjectImages {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyNewProject1 {
+    grid-area: 18;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyNewProject2 {
+    grid-area: 19;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyBranding {
+    grid-area: 20;
+  }
+  div.brandingTextSide h1 {
+
+  }
+  div.brandingTextSide p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyUserTesting {
+    grid-area: 21;
+    text-align: center;
+    padding-top: 3em;
+  }
+  div.testingText h1 {
+    padding-top: 2em;
+  }
+  div.testingText p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.caseStudyConclusion {
+    grid-area: 22;
+    padding: 1em;
+    text-align: center;
+  }
+  div.caseStudyConclusion h1 {
+    padding-top: 2em;
+  }
+  div.caseStudyConclusion p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.backToTopButton {
+    grid-area: 23;
+
+  }
+}
+
+/*
+*
+*
+*
+*/
+
+
+@media screen and (max-width: 768px) {
+  div.wrapper {
+    display:grid;
+    grid-column-gap: 12px;
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyHeader {
+    grid-area: 1;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    div.caseStudyName {
+    grid-area: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.caseStudyName img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.caseStudyName p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyTopPhoto {
+    grid-area: 3;
+    flex-direction: column;
+    float: left;
+}
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyAboutProjectBanner {
+    grid-area: 4;
+    flex-direction: column;
+  }
+
+  div.toolsUsed {
+  flex-direction: column;
+  width: auto;
+}
+
+  div.aboutProject {
+  flex-direction: column;
+  width: auto;
+
+}
+
+  div.whatIDid {
+  flex-direction: column;
+  width: auto;
+}
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyOverview {
+      grid-area: 5;
+      padding: 1em;
+      padding-bottom: 3em;
+    }
+    div.overviewTextBox h1 {
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+    div.overviewTextBox p {
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyChallenge {
+    grid-area: 7;
+    padding: 1em;
+    padding-bottom: 3em;
+    }
+    div.challengeTextBox h1 {
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+    div.challengeTextBox p {
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  div.challengeAndOverviewPicture {
+      grid-area: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyAnswer {
+      grid-area: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+    }
+    div.answerIcon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    div.answerTextBox {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    div.answerTextBox h1 {
+      font-weight: 900;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    div.answerTextBox p {
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyUserResearch {
+    grid-area: 9;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
   div.caseStudyAnalysis {
     grid-area: 10;
     display: flex;
@@ -1099,125 +1671,125 @@ i {
   div.competitorsPicture {
     padding-top: 3em;
   }
-  div.analysisParagraph {
-    font-size: 17px;
+  div.analysisHeading {
+    text-align: center;
+  }
+  div.analysisParagraph p {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  div.caseStudyPersonaBox {
+@media screen and (max-width: 768px) {
+  div.caseStudyPersonaBox, .flex-contain {
     grid-area: 11;
+    flex-direction: column;
+    float: left;
     padding: 2em;
   }
   div.line img {
-    max-width: 100%;
-    height: auto;
+    width: 0;
+    height: 0;
   }
+  div.willPersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.willPersona p {
+    width: 100%;
+}
+  div.katePersona {
+  flex-direction: column;
+  width: auto;
+}
+  div.alexPersona {
+  flex-direction: column;
+  width: auto;
+}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   div.caseStudyUserStories {
     grid-area: 12;
     padding: 3em;
   }
-  div.leftTextStories p {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   div.caseStudyWireframes {
     grid-area: 13;
-  }
-  div.wireframeButtons {
-    flex-direction: column;
+    padding: 2em;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   div.caseStudyMockups {
     grid-area: 14;
     text-align: center;
-    padding: 2em;
-  }
-  div.caseStudyMockups p {
-    padding: 0;
+    padding: 3em;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   div.caseStudyMockupHome {
     grid-area: 15;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  div.caseStudyMockupDetails {
-    grid-area: 16;
 
   }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
   div.caseStudyRoadblock {
+    grid-area: 16;
+    text-align: center;
+    padding: 2.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyNewLookPage {
     grid-area: 17;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyBranding {
+    grid-area: 18;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.caseStudyUserTesting {
+    grid-area: 19;
     text-align: center;
     padding: 2em;
   }
-  div.caseStudyRoadblock p {
-    padding: 0;
-  }
 }
 
-@media screen and (max-width: 480px) {
-  div.caseStudyNewProject1 {
-    grid-area: 18;
-
-  }
-}
-
-@media screen and (max-width: 480px) {
-  div.caseStudyNewProject2 {
-    grid-area: 19;
-
-  }
-}
-
-@media screen and (max-width: 480px) {
-  div.caseStudyBranding {
+@media screen and (max-width: 768px) {
+  div.caseStudyConclusion {
     grid-area: 20;
 
   }
 }
 
-@media screen and (max-width: 480px) {
-  div.caseStudyUserTesting {
-    grid-area: 21;
-    text-align: center;
-    padding: 1em;
-  }
-  div.testingText p {
-    text-align: center;
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  div.caseStudyConclusion {
-    grid-area: 22;
-    padding: 1em;
-    text-align: center;
-  }
-  div.caseStudyConclusion p {
-    padding: 0;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   div.backToTopButton {
-    grid-area: 23;
+    grid-area: 21;
 
+  }
+}
+
+
+/*
+*
+*
+*
+*/
+
+
+
+@media screen and (min-width: 1200px) {
+  .flex-contain {
+    width: 700px;
   }
 }

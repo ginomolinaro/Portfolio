@@ -8,6 +8,21 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  letter-spacing: 0.5px;
+}
+
 .wrapper {
   display:grid;
   grid-column-gap: 12px;
@@ -35,18 +50,18 @@ main {
 }
 
   .text1box {
-    padding-top: 10em;
+    padding-top: 13em;
   }
 
   .text1box h1 {
 	  font-size: 40px;
-	  font-weight: normal;
-    padding-bottom: 1em;
+    font-weight: bold;
+    padding-bottom: 0.1em;
 }
 
   .text1box h2 {
-	  font-size: 35px;
-	  font-weight: bold;
+	  font-size: 28px;
+	  font-weight: 600;
     padding-bottom: 1em;
 }
 
@@ -116,9 +131,9 @@ main {
   background-color: #FEA780;
   border: none;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   padding: 20px;
-  width: 300px;
+  width: 250px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -195,9 +210,9 @@ main {
     background-color: #FEA780;
     border: none;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 20px;
-    width: 300px;
+    width: 250px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -255,8 +270,27 @@ main {
     object-fit: cover;
   }
 
-  .box8 {
+  .box7 {
     grid-row: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #FDDC3D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .box7 a {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .box8 {
+    grid-row: 7;
     grid-column-start: 1;
     grid-column-end: 3;
     background: #FDDC3D;
@@ -417,8 +451,15 @@ section.text1box p {
 }
 
 @media screen and (max-width: 480px) {
-  section.box8 {
+  section.box7 {
     grid-area: 7;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.box8 {
+    grid-area: 8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -545,8 +586,15 @@ section.box1 p {
 }
 
 @media screen and (max-width: 768px) {
-  section.box8 {
+  section.box7 {
     grid-area: 7;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.box8 {
+    grid-area: 8;
     background: #FDDC3D;
     display: flex;
     flex-direction: column;

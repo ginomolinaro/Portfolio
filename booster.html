@@ -176,7 +176,6 @@
         </p>
       </div>
       </div>
-    </div>
 
 <div class="caseStudyPersonaBox">
   <!--<div class="personaHeaderText">
@@ -307,6 +306,7 @@
   <a href="https://xd.adobe.com/spec/c4cb6769-1d88-4342-a422-01bfdaafa02b" target="_blank"><button class="userResearchButton">Mobile Wireframes</button></a>
 </div>
 </div>
+
 <div class="caseStudyMockups">
   <h1>Mockups / First Edition</h1>
   <p>
@@ -393,10 +393,94 @@
   </p>
   <a href="https://www.dropbox.com/s/0n63lh1boee0uj6/Mood%20Board.png?dl=0" target="_blank"><button class="userResearchButton">View Mood Board</button></a>
   </div>
-  <div class="boosterBranding">
-  <img src="images/Booster/boosterStyleTile.png" style="width:100%;">
+  <div class="brandingModals">
+
+    <!-- Images used to open the lightbox -->
+  <div class="row">
+    <div class="column">
+      <img src="images/Booster/boosterStyleTile2.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images/Booster/boosterStyleTile1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="images/Booster/boosterStyleTile2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img src="images/Booster/boosterStyleTile1.png" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+
+    </div>
+  </div>
+
+  <script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById('myModal').style.display = "block";
+  }
+
+  // Close the Modal
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+
 </div>
 </div>
+
 
 <div class="caseStudyUserTesting">
   <div class="testingText">
@@ -463,7 +547,7 @@
 <a href="#content" class="back-to-top">Top</a>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
-
+</div>
 </main>
 </body>
 </html>

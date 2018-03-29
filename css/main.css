@@ -374,11 +374,12 @@ section.box1icon {
   align-items: center;
   justify-content: center;
 }
-
 section.text1box h2 {
   font-size: 23px;
 }
-
+section.text1box br {
+  display: none;
+}
 section.text1box p {
   font-size: 20px;
 }
@@ -512,23 +513,22 @@ section.box1 {
   padding: 3em;
   font-family: 'Raleway', sans-serif;
 }
-
 section.box1 h1 {
   font-size: 25px;
   text-align: center;
 }
-
 section.box1icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 section.box1 h2 {
   font-size: 23px;
   text-align: center;
 }
-
+section.text1box br {
+  display: none;
+}
 section.box1 p {
   font-size: 20px;
   text-align: center;

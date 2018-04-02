@@ -1319,7 +1319,7 @@ i {
 
 @media screen and (max-width: 480px) {
   div.caseStudyChallenge {
-    grid-area: 6;
+    grid-area: 7;
     background-color: #222222;
     padding: 4em;
     }
@@ -1337,7 +1337,7 @@ i {
 
 @media screen and (max-width: 480px) {
   div.challengeAndOverviewPicture {
-      grid-area: 7;
+      grid-area: 6;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1718,7 +1718,7 @@ i {
 
 @media screen and (max-width: 768px) {
   div.caseStudyChallenge {
-    grid-area: 6;
+    grid-area: 7;
     padding: 1em;
     padding-bottom: 3em;
     }
@@ -1736,7 +1736,7 @@ i {
 
 @media screen and (max-width: 768px) {
   div.challengeAndOverviewPicture {
-      grid-area: 7;
+      grid-area: 6;
       display: flex;
       align-items: center;
       justify-content: center;

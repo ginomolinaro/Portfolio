@@ -1195,7 +1195,6 @@ i {
   }
   div.analysisParagraph p {
     width: 100%;
-    font-size: 17px;
   }
 }
 
@@ -1535,6 +1534,9 @@ i {
   div.analysisHeading {
     text-align: center;
   }
+  div.analysisParagraph p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1566,6 +1568,15 @@ i {
   div.caseStudyUserStories {
     grid-area: 12;
     padding: 3em;
+  }
+  div.leftTextStories p  {
+    width: 90%;
+  }
+  div.leftTextStories h1 {
+    width: 70%;
+  }
+  div.leftTextStories h1 {
+    width: 70%;
   }
 }
 

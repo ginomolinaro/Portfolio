@@ -299,7 +299,7 @@ li {
   grid-row: 7;
   grid-column: 1/3;
   background-color: #E94545;
-  padding: 4em;
+  padding: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,7 +310,6 @@ li {
   color: #EBEBEB;
   font-weight: 900;
   text-align: center;
-  padding-left: 0.5em;
 }
 
 .researchTitle {
@@ -328,7 +327,7 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 4em;
+  padding: 1.5em;
 }
 
 .feedbackBox h2 {
@@ -357,7 +356,7 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 4em;
+  padding: 1.5em;
 }
 
 .surveyBox h2 {
@@ -454,20 +453,33 @@ li {
 }
 
 .analysisParagraph {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  width: 80%;
 }
 
+.textSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.analysisWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5em;
+}
+
+
 .analysisParagraph p {
-  width: 90%;
   color: #222222;
   font-weight: 400;
+  width: 100%;
 }
 
 .competitorsPicture {
-  display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -475,7 +487,7 @@ li {
 
 .competitorsPicture img {
   height: auto;
-  max-width: 70%;
+  width: 100%;
 }
 
 .caseStudyPersonaBox {
@@ -486,7 +498,6 @@ li {
   padding-left: 2em;
   padding-right: 2em;
   background-color: #222222;
-  display: flex;
 }
 
 .personaHeaderText {
@@ -509,7 +520,6 @@ li {
 
 .personaHeaderText p {
   color: #EBEBEB;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -1269,8 +1279,10 @@ i {
 @media screen and (max-width: 480px) {
   div.caseStudyTopPhoto {
     grid-area: 3;
-    flex-direction: column;
-    float: left;
+    background-image: none;
+}
+div.caseStudyTopPhoto img {
+  background-image: url()"images/Booster/backgroundImageBooster.png");
 }
 }
 
@@ -1408,12 +1420,17 @@ i {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     }
   div.competitorsPicture {
     padding-top: 3em;
     padding-bottom: 3em;
+  }
+  div.analysisWrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   div.competitorsPicture img {
     width: 50%;
@@ -1422,25 +1439,24 @@ i {
   div.analysisHeading h1 {
     padding-top: 3em;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   div.analysisParagraph p {
-    width: 80%;
+    width: 100%;
     font-size: 17px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   div.analysisParagraph {
     padding-bottom: 5em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  div.textSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -1449,7 +1465,6 @@ i {
     grid-area: 11;
     flex-direction: column;
     float: left;
-    padding: 2em;
   }
   div.line img {
     width: 0;
@@ -1670,8 +1685,10 @@ i {
 @media screen and (max-width: 768px) {
   div.caseStudyTopPhoto {
     grid-area: 3;
-    flex-direction: column;
-    float: left;
+    background-image: none;
+}
+div.caseStudyTopPhoto img {
+  background-image: url("images/Booster/backgroundImageBooster.png");
 }
 }
 
@@ -1823,7 +1840,6 @@ i {
     grid-area: 11;
     flex-direction: column;
     float: left;
-    padding: 2em;
   }
   div.line img {
     width: 0;
@@ -1926,20 +1942,5 @@ i {
 @media screen and (max-width: 768px) {
   div.backToTopButton {
     grid-area: 21;
-  }
-}
-
-
-/*
-*
-*
-*
-*/
-
-
-
-@media screen and (min-width: 1200px) {
-  .flex-contain {
-    width: 700px;
   }
 }

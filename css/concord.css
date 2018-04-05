@@ -485,15 +485,18 @@ li {
   grid-row: 9;
   grid-column: 1/3;
   padding-top: 6em;
-  padding-bottom: 6em;
+  padding-bottom: 8em;
   padding-left: 2em;
   padding-right: 2em;
   background-color: #222222;
 }
 
 .personaHeaderText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 }
 
 .personaHeaderText h1 {
@@ -506,6 +509,7 @@ li {
 .personaHeaderText p {
   color: #EBEBEB;
   text-align: center;
+  width: 60%;
 }
 
 .line img {
@@ -529,17 +533,24 @@ li {
 .eljamPersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .eljamPersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .eljamPersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
+}
+
+.eljamPersona p {
+  text-align: left;
 }
 
 .eljamPersona img {
@@ -561,17 +572,24 @@ li {
 .nataliePersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .nataliePersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .nataliePersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
+}
+
+.nataliePersona p {
+  text-align: left;
 }
 
 .roshanPersona {
@@ -588,17 +606,24 @@ li {
 .roshanPersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .roshanPersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .roshanPersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
+}
+
+.roshanPersona p {
+  text-align: left;
 }
 
 .caseStudyUserStories {
@@ -1142,6 +1167,9 @@ i {
       flex-direction: column;
       float: left;
     }
+    div.personaHeaderText p {
+    width: 100%;
+  }
     div.line img {
       width: 0;
       height: 0;

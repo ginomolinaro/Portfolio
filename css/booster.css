@@ -494,15 +494,18 @@ li {
   grid-row: 9;
   grid-column: 1/3;
   padding-top: 6em;
-  padding-bottom: 6em;
+  padding-bottom: 10em;
   padding-left: 2em;
   padding-right: 2em;
   background-color: #222222;
 }
 
 .personaHeaderText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 }
 
 .line img {
@@ -521,6 +524,7 @@ li {
 .personaHeaderText p {
   color: #EBEBEB;
   text-align: center;
+  width: 60%;
 }
 
 .flex-contain {
@@ -532,22 +536,30 @@ li {
 .willPersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
 }
 
 .willPersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .willPersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .willPersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
+}
+
+.willPersona p {
+  text-align: left;
 }
 
 .willPersona img {
@@ -558,22 +570,30 @@ li {
 .katePersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
 }
 
 .katePersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .katePersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .katePersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
+}
+
+.katePersona p {
+  text-align: left;
 }
 
 .katePersona img {
@@ -584,22 +604,30 @@ li {
 .alexPersona {
   color: #EBEBEB;
   text-align: center;
+  width: 100%;
+}
+
+.alexPersona p {
+  text-align: left;
 }
 
 .alexPersona h1 {
   font-weight: 700;
   padding-top: 1em;
+  text-align: left;
 }
 
 .alexPersona h2 {
   font-weight: 400;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 .alexPersona h3 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
   font-weight: 700;
+  text-align: left;
 }
 
 .alexPersona img {
@@ -1084,7 +1112,7 @@ img.hover-shadow {
 .testingText h1 {
   font-weight: 900;
   color: #FFFFFF;
-  text-align: center;
+  text-align: left;
   padding-bottom: 2em;
   margin-left: 0.5em;
 }
@@ -1100,7 +1128,7 @@ img.hover-shadow {
   color: #EBEBEB;
   font-weight: 400;
   width: 60%;
-  text-align: center;
+  text-align: left;
 }
 
 .userTestingButton {
@@ -1462,6 +1490,9 @@ i {
     flex-direction: column;
     float: left;
   }
+  div.personaHeaderText p {
+  width: 100%;
+}
   div.line img {
     width: 0;
     height: 0;

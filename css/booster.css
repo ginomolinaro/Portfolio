@@ -1279,10 +1279,6 @@ i {
 @media screen and (max-width: 480px) {
   div.caseStudyTopPhoto {
     grid-area: 3;
-    background-image: none;
-}
-div.caseStudyTopPhoto img {
-  background-image: url()"images/Booster/backgroundImageBooster.png");
 }
 }
 
@@ -1685,11 +1681,7 @@ div.caseStudyTopPhoto img {
 @media screen and (max-width: 768px) {
   div.caseStudyTopPhoto {
     grid-area: 3;
-    background-image: none;
-}
-div.caseStudyTopPhoto img {
-  background-image: url("images/Booster/backgroundImageBooster.png");
-}
+  }
 }
 
 @media screen and (max-width: 768px) {

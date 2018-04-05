@@ -9,7 +9,7 @@ main {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 33px;
   letter-spacing: 0.8px;
 }
 
@@ -20,8 +20,9 @@ p {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -49,7 +50,7 @@ h2 {
 }
 
 .textBox h1 {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 1em;
 }
 
@@ -154,7 +155,7 @@ div.socials {
 div.header {
   grid-area: 1;
   background: #FDDC3D;
-  padding: 3em;
+  padding: 2em;
 }
 
 @media screen and (max-width: 768px) {

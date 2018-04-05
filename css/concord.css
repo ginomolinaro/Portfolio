@@ -971,10 +971,7 @@ i {
 
 @media screen and (max-width: 480px) {
   div.caseStudyTopPhoto {
-   background-image:url('../images/bg.png');
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
+    grid-area: 3;
 }
 }
 
